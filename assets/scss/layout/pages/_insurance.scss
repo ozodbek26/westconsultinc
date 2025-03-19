@@ -1,0 +1,280 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  8.1 insurance css
+/*----------------------------------------*/
+.sv-details {
+	&-thumb {
+		& .info {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background: #fbd45b;
+			padding: 50px 55px;
+
+			@media #{$xs} {
+				padding: 0;
+			}
+
+			& .img {
+				float: left;
+				margin-right: 30px;
+			}
+
+			& .text {
+				overflow: hidden;
+			}
+		}
+
+	}
+
+	&-titile {
+		font-size: 24px;
+
+		@media #{$xs} {
+			font-size: 20px;
+		}
+	}
+}
+
+.sv-details-category {
+	&-list {
+		& ul {
+			& li {
+				list-style-type: none;
+
+				& a {
+					background: var(--tp-grey-1);
+					list-style: none;
+					margin-bottom: 10px;
+					padding: 15px 30px;
+					cursor: pointer;
+					transition: .3s;
+					display: inline-block;
+					width: 100%;
+
+					& span {
+						color: #283734;
+						font-size: 16px;
+						font-weight: 700;
+					}
+
+					& i {
+						float: right;
+						background: #f2f5f1;
+						height: 30px;
+						width: 30px;
+						line-height: 34px;
+						transform: .3s;
+						text-align: center;
+						border-radius: 30px;
+						color: var(--tp-heading-primary);
+					}
+				}
+
+				&.active {
+					& a {
+						background-image: linear-gradient(to right, var(--tp-theme-1), #fbd45b);
+						color: var(--tp-common-white);
+
+						& i {
+							background: var(--tp-common-white);
+							color: var(--tp-theme-1);
+						}
+
+						& span {
+							color: #fff;
+						}
+					}
+				}
+
+				&:hover {
+					& a {
+						background-image: linear-gradient(to right, var(--tp-theme-1), #fbd45b);
+						color: var(--tp-common-white);
+
+						& i {
+							background: var(--tp-common-white);
+							color: var(--tp-theme-1);
+						}
+
+						& span {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.tp-insurance-area {
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@media #{$xs} {
+		padding-bottom: 60px;
+		padding-top: 70px;
+	}
+}
+
+.help-lists {
+	& ul {
+		& li {
+			list-style: none;
+
+			& i {
+				color: #fbd45b;
+				margin-right: 15px;
+			}
+
+			& span {
+				font-size: 18px;
+				color: var(--tp-heading-primary);
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.tp-inurance-tab-section {
+	@media #{$xs} {
+		margin-bottom: 40px;
+	}
+}
+
+.sv-details-title {
+	font-size: 30px;
+}
+
+.help-lists h4 {
+	color: var(--tp-theme-1);
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+.insurance-details {
+	&__need-help {
+		position: relative;
+		text-align: center;
+		z-index: 1;
+
+		@media #{$sm, $xs} {
+			display: none;
+		}
+	}
+
+	&__need-help-icon {
+		height: 110px;
+		width: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 22px;
+		border: 1px solid #fbd45a;
+		border-radius: 50%;
+		z-index: 999999;
+		position: relative;
+
+		& span {
+			transition: all 500ms ease;
+			background: #fbd45b;
+			width: 90px;
+			height: 90px;
+			line-height: 100px;
+			border-radius: 50%;
+			font-size: 38px;
+		}
+	}
+
+	&__need-help-contact {
+		position: relative;
+		display: block;
+		margin-top: 30px;
+
+		& h3 {
+			padding-top: 6px;
+			padding-bottom: 23px;
+
+			& a {
+				font-size: 24px;
+				font-weight: 400;
+				transition: all 500ms ease;
+				color: #fff;
+			}
+		}
+
+		& p {
+			font-size: 16px;
+			color: #fff;
+			font-weight: 500;
+		}
+	}
+
+	&__need-help-logo {
+		position: relative;
+		z-index: 99999;
+	}
+
+	&__need-help-bg {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: 1;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			height: 100%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			background-color: #fbd45a;
+			background: rgba($color: #00715d, $alpha: .9);
+		}
+	}
+
+	&__content {
+		padding: 50px 0;
+	}
+}
+
+.shap-img {
+	position: absolute;
+	top: 0;
+	right: -7px;
+}
+
+.cta-mlr {
+	margin-left: 375px;
+	margin-right: 375px;
+
+	@media #{$xxxl} {
+		margin-left: 216px;
+		margin-right: 216px;
+	}
+
+	@media #{$xxl} {
+		margin-left: 109px;
+		margin-right: 109px;
+	}
+
+	@media #{$xl, $lg, $md, $sm} {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	@media #{$xs} {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}

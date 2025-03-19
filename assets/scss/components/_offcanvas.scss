@@ -1,0 +1,260 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.10 Offcanvas
+/*----------------------------------------*/
+.tpoffcanvas {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    bottom: 0;
+    box-shadow: 0 16px -32px 0 rgba(0, 0, 0, .8);
+    background: var(--tp-common-white);
+    z-index: 9999;
+    padding: 50px;
+    scrollbar-width: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.45s ease-in-out;
+    overflow-y: scroll;
+
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: var(--tp-heading-primary);
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    &__contact-content {
+        margin-bottom: 10px;
+    }
+
+    &__contact-content-icon {
+        & i {
+            color: var(--tp-theme-1);
+            width: 30px;
+        }
+    }
+
+    &__contact-content-content {
+        & a {
+            font-size: 16px;
+            color: var(--tp-text-body);
+        }
+    }
+
+    &__contact {
+        margin-bottom: 30px;
+    }
+
+    &__social {
+        margin-bottom: 22px;
+        padding-bottom: 40px;
+
+        & .icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: transparent;
+            color: var(--tp-common-white);
+            margin-right: 5px;
+            transition: all 0.3s ease-in-out;
+
+            &.facebook {
+                background-color: #4661C5;
+            }
+
+            &.twitter {
+                background-color: #4CCEF9;
+            }
+
+            &.youtube {
+                background-color: #FF0000;
+            }
+
+            &.linkedin {
+                background-color: #0072b1;
+            }
+
+            &:hover {
+                transform: translateY(-8px);
+            }
+        }
+    }
+
+    @media #{$xs,} {
+        width: 300px;
+        padding: 40px 35px;
+    }
+
+    @media #{$sm} {
+        width: 400px;
+        padding: 40px;
+    }
+
+    &.opened {
+        right: 0;
+        -webkit-transition: all .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transition: all .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transition-duration: .6s;
+        z-index: 99999999;
+    }
+
+    &__logo {
+        margin-bottom: 40px;
+
+        @media #{$xs,$md} {
+            padding-top: 0;
+        }
+
+        & img {
+            width: 157px;
+            height: 100%;
+        }
+    }
+
+    &__instagram {
+        margin-bottom: 50px;
+
+        @media #{$xs} {
+            text-align: left;
+        }
+
+        & img {
+            width: 80px;
+            margin: 0px 5px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__instagram-title {
+        & h4 {
+            color: var(--tp-common-white);
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__close-btn {
+        & button {
+            position: absolute;
+            right: 50px;
+            top: 50px;
+            transition: 1s;
+            -webkit-transition: all .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            -moz-transition: all .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            transition: all .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            transition-duration: .3s;
+            height: 50px;
+            width: 50px;
+            background-color: var(--tp-common-white);
+            color: var(--tp-common-black);
+
+            & i {
+                font-weight: 300;
+                font-size: 30px;
+            }
+
+            @media #{$md} {
+                font-size: 28px;
+            }
+            
+            @media #{$sm} {
+                right: 23px;
+                top: 34px;
+            }
+
+            @media #{$xs} {
+                font-size: 28px;
+                right: 23px;
+                top: 36px;
+            }
+        }
+    }
+
+    &__content {
+        margin-bottom: 30px;
+
+        & p {
+            font-size: 16px;
+            color: var(--tp-common-white);
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        & span {
+            color: var(--tp-common-white);
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        & a {
+            font-size: 30px;
+            line-height: 51px;
+            font-weight: 700;
+            color: var(--tp-common-white);
+            display: inline-block;
+
+            @media #{$xs} {
+                font-size: 27px;
+            }
+        }
+    }
+
+    &__social {
+        & .social-icon {
+            & a {
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                text-align: center;
+                font-size: 18px;
+                background-color: var(--tp-common-white);
+                color: var(--tp-theme-1);
+                margin-right: 15px;
+                transition: .3s;
+                display: inline-block;
+                border-radius: 10px;
+
+                @media #{$xs} {
+                    margin-right: 3px;
+                }
+
+                &:hover {
+                    background-color: var(--tp-theme-1);
+                    color: var(--tp-common-white);
+                }
+            }
+        }
+    }
+
+    &__info {
+        margin-bottom: 40px;
+
+        & .offcanva-title {
+            color: var(--tp-common-white);
+            padding-bottom: 5px;
+        }
+
+        & a {
+            color: var(--tp-common-white)9;
+            ;
+            line-height: 1.2;
+        }
+    }
+}

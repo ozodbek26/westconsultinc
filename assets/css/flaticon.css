@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon_insurez.ttf") format("truetype"),
+url("../fonts/flaticon_insurez.woff") format("woff"),
+url("../fonts/flaticon_insurez.woff2") format("woff2"),
+url("../fonts/flaticon_insurez.eot") format("embedded-opentype"),
+url("../fonts/flaticon_insurez.svg") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-home:before {
+    content: "\f101";
+}
+.flaticon-pin:before {
+    content: "\f102";
+}
+.flaticon-envelope:before {
+    content: "\f103";
+}
+.flaticon-search:before {
+    content: "\f104";
+}
+.flaticon-telephone:before {
+    content: "\f105";
+}
+.flaticon-right-arrows:before {
+    content: "\f106";
+}
+.flaticon-save-money:before {
+    content: "\f107";
+}
+.flaticon-save-money-1:before {
+    content: "\f108";
+}
+.flaticon-house:before {
+    content: "\f109";
+}
+.flaticon-save-money-2:before {
+    content: "\f10a";
+}
+.flaticon-services:before {
+    content: "\f10b";
+}
+.flaticon-people:before {
+    content: "\f10c";
+}
+.flaticon-medal:before {
+    content: "\f10d";
+}
+.flaticon-car-insurance:before {
+    content: "\f10e";
+}
+.flaticon-life-protection:before {
+    content: "\f10f";
+}
+.flaticon-heartbeat:before {
+    content: "\f110";
+}
+.flaticon-briefcase:before {
+    content: "\f111";
+}
+.flaticon-airplane:before {
+    content: "\f112";
+}
+.flaticon-fire:before {
+    content: "\f113";
+}
+.flaticon-diamond:before {
+    content: "\f114";
+}
+.flaticon-play:before {
+    content: "\f115";
+}
+.flaticon-health-insurance:before {
+    content: "\f116";
+}
+.flaticon-group:before {
+    content: "\f117";
+}
+.flaticon-customer-loyalty:before {
+    content: "\f118";
+}
+.flaticon-rate:before {
+    content: "\f119";
+}
+.flaticon-car:before {
+    content: "\f11a";
+}
+.flaticon-health-insurance-1:before {
+    content: "\f11b";
+}
+.flaticon-down-arrow:before {
+    content: "\f11c";
+}
+.flaticon-calendar:before {
+    content: "\f11d";
+}
+.flaticon-user:before {
+    content: "\f11e";
+}
+.flaticon-facebook:before {
+    content: "\f11f";
+}
+.flaticon-instagram:before {
+    content: "\f120";
+}
+.flaticon-pinterest:before {
+    content: "\f121";
+}
+.flaticon-twitter:before {
+    content: "\f122";
+}
+.flaticon-call:before {
+    content: "\f123";
+}
+.flaticon-clock:before {
+    content: "\f124";
+}
+.flaticon-send:before {
+    content: "\f125";
+}
+.flaticon-check-mark:before {
+    content: "\f126";
+}
+.flaticon-meeting:before {
+    content: "\f127";
+}
+.flaticon-solution:before {
+    content: "\f128";
+}
+.flaticon-life-insurance:before {
+    content: "\f129";
+}
+.flaticon-share:before {
+    content: "\f12a";
+}
+.flaticon-check:before {
+    content: "\f12b";
+}
+.flaticon-double-quotes:before {
+    content: "\f12c";
+}
+.flaticon-claim:before {
+    content: "\f12d";
+}
+.flaticon-lowest-price:before {
+    content: "\f12e";
+}
+.flaticon-cyber-security:before {
+    content: "\f12f";
+}
+.flaticon-administration:before {
+    content: "\f130";
+}
+.flaticon-location:before {
+    content: "\f131";
+}
+.flaticon-phone-call:before {
+    content: "\f132";
+}
+.flaticon-phone-call-1:before {
+    content: "\f133";
+}
+.flaticon-chat:before {
+    content: "\f134";
+}
+.flaticon-check-1:before {
+    content: "\f135";
+}
+.flaticon-location-1:before {
+    content: "\f136";
+}
+.flaticon-email:before {
+    content: "\f137";
+}

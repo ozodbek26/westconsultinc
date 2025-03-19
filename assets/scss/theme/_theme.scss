@@ -1,0 +1,388 @@
+@use '../utils' as *;
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Insurez Company HTML Template Documentation
+    Author: Theme_Pure
+    Support: basictheme400@gmail.com
+    Description: Insurez - Insurez Company HTML Template Documentation
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+	-----------------
+    01. THEME CSS
+	-----------------
+		1.1 Theme Default
+		1.2 Common Classes
+		1.3 Default Spacing
+		
+	-----------------
+    02. COMPONENTS css
+	-----------------
+		2.1 Back to top
+		2.2 Theme Settings
+		2.3 Buttons
+		2.4 Animations
+		2.5 Preloader
+		2.6 Background 
+		2.7 Carousel
+		2.8 Nice Select
+		2.9 Pagination
+		2.10 Offcanvas
+		2.11 Breadcrumb
+		2.12 Accordion
+		2.13 Tab
+		2.14 Modal
+		2.15 Section Title
+	-----------------
+    03. HEADER CSS
+	-----------------
+		3.1 Header Style 1
+		3.2 Header Style 2
+		3.3 Header Style 3
+
+    ---------------------------------
+	04. MENU CSS
+	---------------------------------
+		4.1 Main menu css
+		4.2 Meanmenu css
+
+	---------------------------------
+	05. BLOG CSS
+	---------------------------------
+		5.1 Postbox css
+		5.2 Recent Post css
+		5.3 Sidebar css
+
+	---------------------------------
+	06. FOOTER CSS
+	---------------------------------
+		6.1 Footer Style 1
+	
+	---------------------------------
+	07. PAGES CSS
+	---------------------------------
+		7.1 About css
+		7.2 Blog css
+		7.3 brand css
+		7.4 choose css
+		7.5 contact css
+		7.5 contact css
+		7.7 cta css
+		7.8 error css
+		7.9 feature css
+		8.0 getquote css
+		8.1 insurance css
+		8.2 portfolio css
+		8.3 prizing css
+		8.4 project css
+		8.5 search css
+		8.6 service css
+		8.7 slider css
+		8.8 team css
+		8.9 testimonial css
+		9.0 work css
+
+**********************************************/
+
+
+/*----------------------------------------*/
+/*  1.1 Theme Default
+/*----------------------------------------*/
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	max-width: 1200px;
+	padding-right: var(--bs-gutter-x,15px);
+	padding-left: var(--bs-gutter-x,15px);
+}
+.row {
+	--bs-gutter-x: 30px;
+}
+
+
+@import url($font-url);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*---------------------------------
+	typography css start 
+---------------------------------*/
+body {
+	font-family: var(--tp-ff-body);
+	font-size: 16px;
+	line-height: 30px;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--tp-ff-heading);
+	color: var(--tp-heading-primary);
+	margin-top: 0px;
+	font-weight: 400;
+	line-height: 1.2;
+	@include tp-transition(color);
+}
+
+h1 {
+	font-size: 40px;
+}
+  
+h2 {
+font-size: 36px;
+}
+
+h3 {
+font-size: 28px;
+}
+
+h4 {
+font-size: 24px;
+}
+
+h5 {
+font-size: 20px;
+}
+
+h6 {
+font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: var(--tp-ff-p);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--tp-text-body);
+	margin-bottom: 15px;
+	line-height: 30px;
+	margin: 0;
+}
+a,
+button,
+p,
+input,
+select,
+textarea,
+li,
+.transition-3{
+	@extend %tp-transition-common;
+}
+
+a:not([href]):not([class]), 
+a:not([href]):not([class]):hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover{
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+a,
+button {
+	color: inherit;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+button:focus{
+    outline: 0; 
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+textarea{
+	outline: none;
+	background-color: #EFF0F200;
+	height: 33px;
+	width: 100%;
+	line-height: 54px;
+	font-size: 16px;
+	color: #ffff;
+	padding-right: 29px;
+	border: none;
+	border-bottom: 1px solid #fff;
+
+	@include rtl{
+		text-align: right;
+	}
+
+	@include tp-placeholder{
+		color: #6f7775;
+	}
+}
+
+input[type="color"] {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	border-radius: 50%;
+}
+
+*::-moz-selection {
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
+	text-shadow: none;
+}
+::-moz-selection {
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
+	text-shadow: none;
+}
+::selection {
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
+	text-shadow: none;
+}
+
+
+*::-moz-placeholder {
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
+	opacity: 1;
+}
+*::placeholder {
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
+	opacity: 1;
+}
+
+
+.test-class{
+	padding: 5px 20px;
+	background-color: green;
+	color: #000;
+	position: relative;
+	overflow: hidden;
+	&::after,
+	&::before{
+		position: absolute;
+		content: '';
+		left: -23px;
+		bottom: -7px;
+		width: 79%;
+		height: 10px;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+
+	&::before{
+		left: auto;
+		right: -23px;
+		top: -7px;
+		bottom: auto;
+	}
+
+	& span{
+		position: relative;
+
+		&::after,
+		&::before{
+			position: absolute;
+			content: '';
+			left: -23px;
+			bottom: -7px;
+			width: 79%;
+			height: 10px;
+			background-color: red;
+			border-radius: 50%;
+
+		}
+	}
+}
+.footer__subscribe-input input::placeholder {
+	color: #98a8a5;
+	opacity: 1;
+  }
+
+.z-index-1{
+	position: relative;
+	z-index: 1;
+}
+.z-index-2 {
+	position: relative;
+	z-index: 2;
+}
+.z-index-3{
+	position: relative;
+	z-index: 3;
+}
+.z-index-4{
+	position: relative;
+	z-index: 4;
+}
+.z-index-5{
+	position: relative;
+	z-index: 5;
+}
+.z-index-6{
+	position: relative;
+	z-index: 6;
+}
+.z-index-7{
+	position: relative;
+	z-index: 7;
+}
+.z-index-8{
+	position: relative;
+	z-index: 8;
+}
+.z-index-9{
+	position: relative;
+	z-index: 9;
+}

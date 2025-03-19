@@ -1,0 +1,415 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  8.8 team css
+/*----------------------------------------*/
+
+
+.tp-team-2 {
+	&__item {
+		&:hover {
+			& .tp-team-2__thumb {
+				&::before {
+					opacity: 1;
+					visibility: visible;
+					-webkit-transform: perspective(400px) rotateX(0deg) scaleY(1);
+					-ms-transform: perspective(400px) rotateX(0deg) scaleY(1);
+					transform: perspective(400px) rotateX(0deg) scaleY(1);
+					transition-delay: 0.1s;
+					transition-timing-function: ease-in-out;
+					transition-duration: 0.7s;
+					transition-property: all;
+				}
+			}
+
+			& .tp-team-2__share {
+				background: var(--tp-theme-2);
+				color: var(--tp-heading-primary);
+			}
+
+			& img {
+				transform: scale(1.1);
+			}
+
+			& .tp-team-2__content::before {
+				width: 100%;
+				left: 0;
+				right: auto;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__box {
+		position: relative;
+	}
+
+	&__thumb {
+		&::before {
+			position: absolute;
+			content: '';
+			background: rgba($color: #283734, $alpha: .75);
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			opacity: 0;
+			transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease, -webkit-transform 500ms ease;
+			-webkit-transform: translateY(-70%);
+			transform: translateY(-100%);
+			visibility: hidden;
+			-webkit-transform: perspective(400px) rotateX(90deg) scaleY(0.5);
+			-ms-transform: perspective(400px) rotateX(90deg) scaleY(0.5);
+			transform: perspective(400px) rotateX(90deg) scaleY(0.5);
+			-webkit-transform-origin: center;
+			-ms-transform-origin: center;
+			transform-origin: center;
+			transition-delay: 0.1s;
+			transition-timing-function: ease-in-out;
+			transition-duration: 0.5s;
+			transition-property: all;
+		}
+
+		& img {
+			@include transition(0.4s);
+		}
+	}
+
+	&__share {
+		background: #00705c;
+		height: 48px;
+		width: 48px;
+		line-height: 48px;
+		text-align: center;
+		color: white;
+		border-radius: 50%;
+		z-index: 2;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: -27px;
+		@include transition(0.4s);
+		cursor: pointer;
+	}
+
+	&__content {
+		padding: 45px 0 20px 0;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+		transition: .3s;
+
+		& h4 {
+			font-size: 22px;
+			color: var(--tp-heading-primary);
+			font-weight: 400;
+			margin: 0;
+
+			&:hover {
+				color: #00715d;
+			}
+		}
+
+		& span {
+			color: var(--tp-text-body);
+			font-size: 16px;
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			bottom: 0;
+			left: auto;
+			right: 0;
+			height: 2px;
+			width: 0;
+			opacity: 0;
+			background-color: #006e5a;
+			transition: 0.3s linear;
+		}
+	}
+
+	&__social {
+		display: inline-block;
+		position: absolute;
+		color: var(--tp-heading-primary);
+		bottom: 44px;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: all 0.4s ease-out 0s;
+		-moz-transition: all 0.4s ease-out 0s;
+		-ms-transition: all 0.4s ease-out 0s;
+		-o-transition: all 0.4s ease-out 0s;
+		transition: all 0.4s ease-out 0s;
+		transform: translateY(-40px);
+
+		@media #{$xxxl} {
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+
+		@media #{$xxl} {
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+
+		@media #{$xl, $lg,} {
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+
+		@media #{$sm, $xs} {
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+
+		@media #{$md} {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		& ul {
+			background: var(--tp-grey-1);
+			display: inline-block;
+			padding: 7px 30px;
+
+			& li {
+				display: inline-block;
+				padding: 0 8px;
+
+				& a {
+					& i {
+						@include transition(0.4s);
+					}
+				}
+
+				& a {
+					&:hover {
+						& i {
+							color: #fbd45a;
+						}
+					}
+				}
+			}
+		}
+
+		&::before {
+			clip-path: polygon(100% 0, 1% 0, 53% 100%);
+			position: absolute;
+			left: 50%;
+			right: 50%;
+			background: var(--tp-grey-1);
+			height: 13px;
+			width: 12px;
+			content: '';
+			bottom: -12px;
+			transform: translateX(-50%);
+			@include transition(0.4s);
+		}
+	}
+}
+
+.tp-team-2__item:hover .tp-team-2__social {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+.team-slider-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-color: var(--tp-theme-2);
+	width: 20px;
+	border-radius: 0;
+}
+
+.team-slider-dots .swiper-pagination-bullet {
+	width: 20px;
+	height: 4px;
+	border-radius: 0;
+	display: inline-block;
+	background-color: var(--tp-heading-primary);
+	margin: 0px 3px;
+	transition: 0.3s;
+	opacity: 1;
+}
+
+
+
+.team-detials {
+	@media #{$md, $sm, $xs} {
+		padding-right: 0;
+	}
+
+	&__info {
+		& h4 {
+			font-size: 24px;
+			color: var(--tp-theme-1);
+
+			@media #{$xs} {
+				font-size: 20px;
+			}
+		}
+	}
+
+	&__content {
+		@media #{$md, $sm, $xs} {
+			padding-top: 52px;
+		}
+	}
+}
+
+.tp-skill {
+	&__content {
+		@media #{$xs} {
+			padding-right: 0;
+		}
+
+		& .help-list {
+			& ul {
+				& li {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.team-detials {
+	&__call-content {
+		& a {
+			display: block;
+			font-size: 16px;
+			color: #283734;
+			font-weight: 600;
+		}
+	}
+
+	&__call {
+		display: flex;
+		align-items: center;
+
+		@media #{$lg} {
+			padding-left: 10px;
+		}
+
+		@media #{$xs} {
+			padding-left: 0px;
+			padding-top: 20px;
+		}
+	}
+
+	&__contact {
+		display: flex;
+
+		@media #{$xs} {
+			display: block;
+		}
+	}
+
+	&__call-icon {
+		height: 48px;
+		width: 48px;
+		background: var(--tp-grey-1);
+		text-align: center;
+		line-height: 51px;
+		font-size: 20px;
+	}
+
+	&__social {
+		display: flex;
+
+		& span {
+			color: var(--tp-text-body);
+			font-size: 16px;
+			font-size: 500;
+		}
+
+		& .icon {
+			& i {
+				font-size: 16px;
+				color: var(--tp-heading-primary);
+				margin-left: 30px;
+				@include transition(0.4s);
+
+				@media #{$xs} {
+					margin-left: 16px;
+				}
+
+				&:hover {
+					color: #fbd45b;
+				}
+			}
+		}
+
+	}
+}
+
+.comment-form {
+	&__input-box {
+		position: relative;
+		display: block;
+		margin-bottom: 27px;
+	}
+
+	&__input-box {
+		& textarea {
+			font-size: 14px;
+			color: var(--tp-heading-primary);
+			height: 150px;
+			width: 100%;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.04);
+			padding: 15px 30px 30px;
+			border: none;
+			outline: none;
+			margin-bottom: 0px;
+			font-weight: 500;
+		}
+	}
+}
+
+.message-one .comment-form__input-box input[type="text"],
+.message-one .comment-form__input-box input[type="email"] {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.04);
+}
+
+.comment-form__input-box input[type="text"],
+.comment-form__input-box input[type="email"] {
+	height: 60px;
+	width: 100%;
+	border: none;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.04);
+	padding-left: 30px;
+	padding-right: 30px;
+	outline: none;
+	font-size: 14px;
+	color: var(--tp-heading-primary);
+	display: block;
+	font-weight: 500;
+
+}
+
+.message-one .comment-form__input-box.text-message-box {
+	height: 180px;
+}
+
+.message-one .comment-form__input-box textarea {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.04);
+	height: 180px;
+}
+.tp-team-area {
+	@media #{$xs} {
+	padding-bottom: 74px;
+	padding-top: 44px;
+	}
+}
+.tp-message-area {
+	background-size: cover;
+	background-repeat: no-repeat;
+}

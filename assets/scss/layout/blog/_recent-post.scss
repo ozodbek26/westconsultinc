@@ -1,0 +1,104 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  5.2 Recent Post css
+/*----------------------------------------*/
+
+.rc{
+    &__post{
+        background-color: var(--tp-grey-1);
+        padding: 22px;
+        &:hover{
+            background-color: var(--tp-common-white);
+            padding: 22px;
+        }
+        & ul{
+            & li{
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &-thumb{
+            & img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        &-title{
+            font-size: 16px;
+            color: var(--tp-heading-primary);
+            font-weight: 400;
+            margin-top: 2px;
+            transition: .3s;
+            & a{
+                &:hover{
+                    color: var(--tp-theme-primary);
+                }
+            }
+            &:hover {
+                color: var(--tp-theme-1);
+            }
+        }
+    }
+    &__meta{
+        & span{
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--tp-text-body);
+            & a {
+                & i {
+                    color: var(--tp-theme-1);
+                }
+            }
+        }
+    }
+    &__post-thumb {
+        flex: 0 0 auto;
+        position: relative;
+        &::before {
+            background: rgba($color: #00715d, $alpha: .9);
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+          }
+    }
+    &__post {
+        &:hover {
+            & .rc__post-thumb::before {
+                opacity: 1;
+                visibility: visible;
+                z-index: 99;
+            }
+            & span {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+.rc__post-thumb span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: var(--tp-common-white);
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    opacity: 0;
+    visibility: visible;
+    z-index: 999;
+}
+.rc:hover .rc__post span {
+	opacity: 1;
+	visibility: visible;
+}

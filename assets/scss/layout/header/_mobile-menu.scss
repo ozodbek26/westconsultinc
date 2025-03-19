@@ -1,0 +1,25 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.1 Header Style 1
+/*----------------------------------------*/
+
+.mobile-header {
+    padding: 20px;
+}
+
+.mobile {
+    &__menu {
+        & a {
+            margin-right: 0;
+            display: inline-block;
+            background: #fbd45a;
+            padding: 10px 20px;
+            transition: .3s;
+            &:hover {
+              color: #fff;
+                background-color: #00715d;
+            }
+        }
+    }
+}

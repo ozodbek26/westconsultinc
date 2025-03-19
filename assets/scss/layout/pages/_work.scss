@@ -1,0 +1,128 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  9.0 work css
+/*----------------------------------------*/
+
+.tp-work-2 {
+	&__icon {
+		display: inline-block;
+		& span {
+			display: inline-block;
+			position: relative;
+			z-index: 1;
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: "";
+				border-radius: 50%;
+				background-color: #00705c;
+				transform: scale(0);
+				transition: all 0.4s;
+				z-index: -1;
+			}
+		}
+		&:hover {
+			transform: scale(1);
+			& b {
+				background: var(--tp-common-white);
+			}
+		}
+		& span {
+			height: 90px;
+			width: 90px;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.08);
+			z-index: 9999;
+			position: relative;
+			color: #00705c;
+			font-size: 40px;
+			display: block;
+			text-align: center;
+			line-height: 101px;
+			border-radius: 50%;
+			z-index: 1;
+		}
+
+		& b {
+			background: var(--tp-theme-2);
+			height: 30px;
+			width: 30px;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 50%;
+			position: absolute;
+			top: 39px;
+			left: -14px;
+			z-index: 1;
+			@include transition(0.4s);
+		}
+	}
+
+	&__content {
+		z-index: 1;
+		position: relative;
+		& h3 {
+			font-size: 22px;
+			color: var(--tp-heading-primary);
+			font-weight: 400;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__item {
+		@media #{$md, $sm, $xs, $ssm} {
+			margin-top: 0;
+		}
+		&:hover {
+			.tp-work-2__icon span::before {
+				transform: scale(1);
+			}
+			.tp-work-2__icon span i {
+				color: var(--tp-common-white);
+			}
+		}
+	}
+
+}
+.tp-work__shape {
+	position: absolute;
+	top: 15%;
+	left: 16%;
+
+	@media #{$lg} {
+		left: 15%;
+	}
+
+	@media #{$md} {
+		display: none;
+	}
+
+	& span {
+		& svg {
+			width: 100%;
+
+			@media #{$lg} {
+				width: 87%;
+			}
+		}
+
+		& path {
+			animation: lineDash 90s linear infinite;
+		}
+	}
+}
+
+.tp-work__shape span svg {
+
+	@media #{$md} {
+		width: 80%;
+	}
+
+	@media #{$sm, $xs, $ssm} {
+		display: none;
+	}
+}

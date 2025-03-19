@@ -1,0 +1,38 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  8.2 portfolio css
+/*----------------------------------------*/
+
+.portfolio-title {
+	color: var(--tp-heading-primary);
+	font-size: 30px;
+}
+.portfolio-padding {
+	@media #{$xl} {
+		padding-top: 60px;
+		padding-bottom: 10px;
+	}
+}
+.tp-portfolio-warp {
+	@media #{$xs} {
+		padding-bottom: 49px;
+		padding-top: 60px;
+	}
+}
+.tp-portfolio {
+	&__area {
+		@media #{$xs} {
+			padding-bottom: 60px;
+			padding-top: 80px;
+		}
+	}
+	&__content {
+		& p {
+			font-size: 18px;
+			color: var(--tp-text-body);
+			line-height: 34px;
+		}
+	}
+	
+}

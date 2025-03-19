@@ -1,0 +1,235 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.12 Accordion
+/*----------------------------------------*/
+.accordion-style .card {
+    box-shadow: none;
+    margin-top: 0 !important;
+    border: none;
+    box-shadow: 0px 3px 10px 0px rgba(41, 45, 194, 0.08);
+    border: 2px solid #f4f4f4;
+}
+
+.accordion-style .card-header {
+    border: 0px;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: none;
+}
+
+.card-header:first-child {
+    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+}
+
+.accordion-right-img {
+    & .video-icon {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        left: 0;
+        height: 60px;
+        width: 60px;
+        background: #fbd663;
+        line-height: 60px;
+        cursor: pointer;
+        -webkit-animation: tp-ripple 1.2s linear infinite;
+        animation: tp-ripple 1.2s linear infinite;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+    }
+}
+
+.accordion-style .btn-link {
+    color: var(--tp-heading-primary);
+    line-height: 20px;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+    border-radius: 4px;
+    padding: 20px 35px 20px 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.accordion-style .btn-link.collapsed:after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Pro";
+}
+
+.accordion-style .btn-link:after {
+    content: "";
+    right: 17px;
+    font-size: 18px;
+    height: 30px;
+    transform: none;
+    width: 30px;
+    top: 16px;
+    position: absolute;
+    color: var(--tp-heading-primary);
+    content: "\f107";
+    font-family: "Font Awesome 5 Pro";
+    transition: .4s;
+    background: #fbd45b;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 400;
+
+    @media #{$md} {
+        top: 26px;
+    }
+}
+
+.accordion-style .card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.04);
+}
+
+.accordion-right-img {
+    .video-icon {
+        & a {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #fbd663;
+            color: var(--tp-heading-primary);
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            transition: .3s;
+            font-size: 20px;
+
+            &.popup-video {
+                border-radius: 0 !important;
+            }
+
+            & i {
+                transition: .4s;
+            }
+
+            &:hover {
+                background: #00715d;
+
+                & i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+.accordion-style .show {
+    border-top: 1px solid #f1f2f2;
+}
+
+.card-body {
+    color: var(--tp-text-body);
+    padding: 30px 30px;
+    padding-top: 26px;
+}
+
+.tp-accordion-2 {
+    &__icon_s {
+        font-size: 60px;
+        color: var(--tp-theme-1);
+        margin-right: 13px;
+        margin-top: -30px;
+    }
+
+    &__content {
+        & .tite {
+            font-size: 22px;
+            color: var(--tp-heading-primary);
+        }
+
+        & .title_20 {
+            font-size: 16px;
+            color: var(--tp-text-body);
+            padding-right: 29px;
+
+            @media #{$md} {
+                padding-right: 0px;
+            }
+            @media #{$xs} {
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+.help-list {
+    & ul {
+        display: inline-block;
+
+        & li {
+            width: 50%;
+            float: left;
+            list-style: none;
+            margin-bottom: 10px;
+
+            @media #{$md, $xs} {
+                width: 100%;
+                display: flex;
+            }
+
+            & i {
+                color: var(--tp-theme-1);
+                margin-right: 15px;
+                margin-top: 8px;
+            }
+
+            & span {
+                font-size: 18px;
+                color: var(--tp-heading-primary);
+                font-weight: 400;
+
+                @media #{$xs} {}
+            }
+        }
+
+    }
+}
+
+.pe-xl-6 {
+    @media #{$sm, $xs} {
+        margin-left: 0;
+    }
+}
+
+.tp-faq-inner-bg {
+
+    background-color: #fcfaf7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 53%;
+}
+
+.accordion-padding {
+    @media #{$lg, $md, $xs, $sm,} {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+}
+
+.tp-accordion-bg-shap {
+    position: absolute;
+    right: -603px;
+    top: -283px;
+    animation: animationglob 30s cubic-bezier(1, 0.99, 0.03, 0.01) infinite;
+
+    @media #{$xs} {
+        right: 0;
+        top: 0;
+    }
+}

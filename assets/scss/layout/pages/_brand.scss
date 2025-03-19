@@ -1,0 +1,65 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.3 brand css
+/*----------------------------------------*/
+
+.tp-brand-single {
+	opacity: .12;
+	@include transition(0.4s);
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.mlr-2 {
+	margin-left: 280px;
+	margin-right: 280px;
+
+	@media #{$xxxl, $xxl} {
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+	@media #{$xl} {
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+	@media #{$lg} {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	@media #{$md} {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	@media #{$sm, $xs, $ssm} {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-bottom: 40px;
+		padding-top: 80px;
+	}
+}
+
+.tp-brand-area {
+	margin-bottom: -90px;
+	z-index: 9;
+	position: relative;
+}
+
+.tp-brand-single {
+	margin-left: 8px;
+}
+
+.tp-brand {
+	&__bg-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		animation: moving 9s linear infinite;
+	}
+}

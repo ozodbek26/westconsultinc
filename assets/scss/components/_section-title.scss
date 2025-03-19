@@ -1,0 +1,94 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.15 Section Title
+/*----------------------------------------*/
+
+.section{
+    &__title{
+        font-size: 60px;
+        color: var(--tp-common-black);
+        font-weight: var(--tp-fw-bold);
+        text-transform: uppercase;
+
+        @media #{$xl}{
+            font-size: 45px;
+        }
+
+        @media #{$lg}{
+            font-size: 35px;
+        }
+
+        @media #{$sm}{
+            font-size: 45px;
+        }
+
+        @media #{$xs}{
+            font-size: 30px;
+        }
+        &-pre{
+            font-size: 14px;
+            font-weight: var(--tp-fw-bold);
+            color: var(--tp-theme-primary);
+            display: inline-block;
+            text-transform: uppercase;
+        }
+    }
+}
+.tp-section-subtitle {
+	color: #00715d;
+	text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.tp-slider-title br {
+    @media #{$lg}{
+        font-size: 34px;
+        line-height: 30px;
+      }
+}
+.tp-section-title {
+	font-size: 50px;
+    @media #{$lg}{
+      font-size: 34px;
+    }
+    @media #{$sm}{
+        font-size: 39px;
+      }
+      @media #{$xs}{
+        font-size: 35px;
+      }
+      & br{
+        @media #{$xs}{
+            display: none;
+          }
+      }
+}
+.tp-section-pre {
+
+    @media #{$lg} {
+        margin-top: 12px;
+    }
+    @media #{$md, $sm, $xs} {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
+.subtitle-before {
+	position: relative;
+    &::after {
+        top: -5px;
+        width: 30px;
+        height: 2px;
+        content: "";
+        background: #fbd45a;
+        display: inline-block;
+        right: -11px;
+        position: relative;
+    }
+}
+.tp-section-box {
+    @media #{$md} {
+        margin-bottom: 0;
+    }
+}

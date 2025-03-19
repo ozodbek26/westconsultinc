@@ -1,0 +1,295 @@
+/*----------------------------------------*/
+/*  2.4 Animations
+/*----------------------------------------*/
+
+/* pulse effect animation */
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+	}
+
+	70% {
+		-moz-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@-webkit-keyframes lineDash {
+	0% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 1000;
+	}
+}
+
+@keyframes lineDash {
+	0% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 1000;
+	}
+}
+
+@keyframes moving {
+	0% {
+		transform: translatey(0px);
+	}
+
+	25% {
+		transform: translatex(20px);
+	}
+
+	50% {
+		transform: translatey(-20px);
+	}
+
+	75% {
+		transform: translatex(-20px);
+	}
+
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+
+@-webkit-keyframes animate_right {
+
+
+	50% {
+		-ms-transform: translate(200px, -200px) rotate(180deg);
+		-webkit-transform: translate(200px, -200px) rotate(180deg);
+		transform: translate(200px, -200px) rotate(180deg);
+	}
+
+
+
+}
+
+@keyframes animate_right {
+
+	50% {
+		-ms-transform: translate(200px, -200px) rotate(180deg);
+		-webkit-transform: translate(200px, -200px) rotate(180deg);
+		transform: translate(200px, -200px) rotate(180deg);
+	}
+
+
+
+}
+
+
+
+@keyframes animationglob {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes tp-ripple {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 30px rgba(255, 255, 255, 0.356), 0 0 0 40px rgba(255, 255, 255, 0.2);
+		box-shadow: 0 0 0 0 rgba(248, 248, 248, 0.2), 0 0 0 30px rgba(252, 252, 252, 0.2), 0 0 0 40px rgba(247, 246, 245, 0.2);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 30px rgba(252, 252, 252, 0.2), 0 0 0 40px rgba(255, 255, 255, 0.2), 0 0 0 50px rgba(243, 243, 243, 0);
+		box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2), 0 0 0 40px rgba(250, 250, 250, 0.2), 0 0 0 60px rgba(255, 255, 255, 0);
+	}
+}
+
+
+@keyframes tfLeftToRight {
+	49% {
+		transform: translateX(30%);
+	}
+
+	50% {
+		opacity: 0;
+		transform: translateX(-30%);
+	}
+
+	51% {
+		opacity: 1;
+	}
+}
+
+@keyframes float-bob-y {
+	0% {
+		transform: translateY(-20px);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(-20px);
+	}
+}
+
+@-webkit-keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes lineDash {
+	0% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 1000;
+	}
+}
+
+@keyframes lineDash {
+	0% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 1000;
+	}
+}
+
+
+@-webkit-keyframes lineDash-2 {
+	0% {
+		stroke-dashoffset: -0;
+	}
+
+	100% {
+		stroke-dashoffset: -1000;
+	}
+}
+
+@keyframes lineDash-2 {
+	0% {
+		stroke-dashoffset: -0;
+	}
+
+	100% {
+		stroke-dashoffset: -1000;
+	}
+}
+
+//header animation
+@-moz-keyframes headerSlideDown {
+	0% {
+		margin-top: -150px
+	}
+
+	100% {
+		margin-top: 0
+	}
+}
+
+@-ms-keyframes headerSlideDown {
+	0% {
+		margin-top: -150px
+	}
+
+	100% {
+		margin-top: 0
+	}
+}
+
+@-webkit-keyframes headerSlideDown {
+	0% {
+		margin-top: -150px
+	}
+
+	100% {
+		margin-top: 0
+	}
+}
+
+@keyframes headerSlideDown {
+	0% {
+		margin-top: -150px
+	}
+
+	100% {
+		margin-top: 0
+	}
+}
+
+@-moz-keyframes headerSlideUp {
+	0% {
+		margin-top: 0
+	}
+
+	100% {
+		margin-top: -150px
+	}
+}
+
+@-ms-keyframes headerSlideUp {
+	0% {
+		margin-top: 0
+	}
+
+	100% {
+		margin-top: -150px
+	}
+}
+
+@-webkit-keyframes headerSlideUp {
+	0% {
+		margin-top: 0
+	}
+
+	100% {
+		margin-top: -150px
+	}
+}
+
+@keyframes headerSlideUp {
+	0% {
+		margin-top: 0
+	}
+
+	100% {
+		margin-top: -150px
+	}
+}

@@ -1,0 +1,304 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.1 Footer Style 1
+/*----------------------------------------*/
+
+/* footer col design for home 1 */
+.footer-col {
+	&-1 {
+		padding-right: 35px;
+	}
+
+	&-2 {
+		margin-left: -30px;
+
+		@media #{$sm, $xs} {
+			margin-left: 0;
+		}
+	}
+
+	&-3 {
+		padding-right: 10px;
+	}
+
+	&-4 {
+		padding-left: 20px;
+
+		@media #{$lg, $sm, $xs} {
+			padding-left: 0;
+		}
+	}
+}
+
+.footer {
+	&__widget-title {
+		font-size: 20px;
+		color: var(--tp-common-white);
+		font-weight: 400;
+		margin-bottom: 25px;
+		position: relative;
+
+		&::after {
+			top: -5px;
+			width: 32px;
+			height: 2px;
+			content: "";
+			background: var(--tp-theme-2);
+			display: inline-block;
+			right: -11px;
+			position: relative;
+		}
+	}
+
+	&__copyright {
+		& p {
+			color: #98a8a5;
+			font-size: 16px;
+		}
+	}
+
+	&__subscribe-input {
+		& i {
+			position: absolute;
+			bottom: 98px;
+			right: 0;
+			color: var(--tp-theme-2);
+		}
+	}
+
+	&__area {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__widget {
+		z-index: 9;
+		position: relative;
+	}
+
+	&__widget-info {
+		& p {
+			color: #98a8a5;
+			margin-bottom: 25px;
+		}
+	}
+
+	&__top {
+		position: relative;
+        @media #{$xs} {
+            padding-bottom: 48px;
+            padding-top: 80px;
+        }
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			background: #0c2621;
+			width: 100%;
+			height: 100%;
+			opacity: .965;
+			z-index: 1;
+		}
+	}
+
+	&__logo {
+		margin-bottom: 17px;
+		margin-top: -15px;
+	}
+
+	&__social {
+		& ul {
+			& li {
+				display: inline-block;
+				margin-right: 10px;
+
+				& a {
+					width: 40px;
+					height: 40px;
+					background: var(--tp-heading-primary);
+					display: inline-block;
+					text-align: center;
+					line-height: 40px;
+					border-radius: 50%;
+					color: var(--tp-common-white);
+					transition: .3s;
+					font-size: 18px;
+
+					& i {
+						font-size: 14px;
+					}
+
+					&:hover {
+						background: var(--tp-theme-2);
+						color: var(--tp-heading-primary);
+					}
+				}
+
+			}
+		}
+	}
+
+	&__contact-info {
+		& ul {
+			& li {
+				position: relative;
+				list-style-type: none;
+				padding-left: 25px;
+				margin-bottom: 18px;
+				font-size: 16px;
+				color: #98a8a5;
+				list-style: none;
+				margin-bottom: 14px;
+
+				& a {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 20px;
+				}
+
+				& span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					color: var(--tp-theme-2);
+				}
+
+				&:hover {
+					& a {
+						color: var(--tp-common-white);
+					}
+				}
+			}
+		}
+	}
+
+	&__subscribe {
+		& p {
+			font-size: 16px;
+			color: #98a8a5;
+			margin-bottom: 20px;
+			line-height: 1;
+		}
+	}
+}
+
+
+.form-check-input {
+	background-color: #37323200;
+	border: 1px solid rgb(255, 255, 255);
+}
+
+
+.form-check {
+	display: block;
+	min-height: 1.5rem;
+	padding-left: 1.5em;
+	margin-bottom: 0.125rem;
+	margin-top: 20px;
+}
+
+.tp-footer-widget__check-box .form-check-input {
+	margin-top: 6px;
+}
+
+.form-check-input[type="checkbox"] {
+	border-radius: .25em;
+}
+
+.form-check .form-check-input {
+	float: left;
+	margin-left: -1.5em;
+	margin-top: 8px;
+}
+
+.form-check-input:checked {
+	background-color: #98a8a500;
+	border-color: #98a8a5;
+}
+
+.form-check-label {
+	font-size: 14px;
+	color: #98a8a5;
+}
+
+.fw-insta {
+	& ul {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0 -7.5px -15px -7.5px;
+
+		& li {
+			padding: 0 7.5px 15px 7.5px;
+			width: 33.333%;
+			flex: 0 0 33.333%;
+			list-style: none;
+
+			@media #{$xl} {
+				padding: 0 7.5px 22px 7.5px;
+				flex: 0 0 17.333%;
+			}
+
+			@media #{$lg} {
+				flex: 0 0 17.333%;
+			}
+
+			@media #{$md, $sm} {
+				flex: 0 0 25.333%;
+			}
+
+			@media #{$xs} {
+				flex: 0 0 20%;
+			}
+
+
+			& a {
+				position: relative;
+				display: inline-block;
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					background: rgba($color: #f7cf5a, $alpha: .9);
+					opacity: 0;
+					visibility: hidden;
+					transition: .3s;
+				}
+
+				& i {
+					position: absolute;
+					top: 45%;
+					left: 38%;
+					transform: translate(-50%, -50%);
+					transform: rotate(-30deg);
+					text-align: center;
+					opacity: 0;
+					visibility: hidden;
+					transition: 0.3s;
+					line-height: 45%;
+				}
+			}
+
+			&:hover {
+				& a {
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
+
+					& i {
+						opacity: 1;
+						visibility: visible;
+					}
+
+				}
+			}
+		}
+	}
+}

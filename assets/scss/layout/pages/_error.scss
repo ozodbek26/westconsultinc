@@ -1,0 +1,57 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.8 error css
+/*----------------------------------------*/
+
+.error-page {
+	&__tagline {
+		font-size: 34px;
+		color: var(--tp-heading-primary);
+		padding-top: 40px;
+		padding-bottom: 20px;
+		@media #{$xs} {
+            font-size: 29px;
+        }
+	}
+	
+}
+.error-page__form-input {
+	position: relative;
+	display: block;
+	max-width: 570px;
+	width: 100%;
+	margin: 0 auto;
+}
+.error-page__form {
+	position: relative;
+	display: block;
+	margin: 32px auto 20px;
+}
+.error-page__form input[type="search"] {
+	height: 61px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: var(--tp-grey-1);
+	font-size: 16px;
+	color: rgba($color: var(--tp-text-body), $alpha: .6);
+	font-weight: 500;
+	padding-left: 50px;
+	padding-right: 75px;
+}
+.error-page__form button[type="submit"] {
+	background-color: transparent;
+	color: var(--tp-heading-primary);
+	font-size: 16px;
+	position: absolute;
+	top: 0;
+	right: 0px;
+	bottom: 0;
+	width: 70px;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	padding: 0;
+}

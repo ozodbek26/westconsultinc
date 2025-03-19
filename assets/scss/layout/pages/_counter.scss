@@ -1,0 +1,140 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.6 counter css
+/*----------------------------------------*/
+.tp-fact-area {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.tpfact {
+	&__icon {
+		float: left;
+		margin-right: 20px;
+
+		& i {
+			font-size: 60px;
+			color: var(--tp-heading-primary);
+		}
+	}
+
+	&__content {
+		overflow: hidden;
+
+		& h2 {
+			font-size: 48px;
+			color: var(--tp-theme-1);
+
+			& span {
+				font-size: 48px;
+				color: var(--tp-theme-1);
+				margin: 0;
+
+				@media #{$md} {
+					font-size: 35px;
+				}
+			}
+		}
+
+		& span {
+			font-size: 18px;
+			color: var(--tp-text-body);
+		}
+	}
+}
+
+.container-custom {
+	@media #{$custom_xl} {
+		max-width: 1370px;
+	}
+}
+
+.fact-bg {
+	padding: 110px 25px 75px 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@media #{$lg} {
+		padding: 110px 25px 75px 20px;
+	}
+	@media #{$xs} {
+		padding: 110px 25px 44px 42px;
+	}
+}
+
+.counter-mlr {
+	margin-top: -110px;
+}
+
+.tpfact-2 {
+	&__bg-shap {
+		position: absolute;
+		left: 0;
+		top: 0;
+		animation: moving 9s linear infinite;
+	}
+
+	&__icon {
+		color: var(--tp-theme-2);
+		font-size: 67px;
+		font-weight: bold;
+		margin-bottom: 20px;
+
+		& h2 {
+			font-size: 48px;
+			color: var(--tp-grey-1);
+			padding-top: 20px;
+			margin-right: 25px;
+
+			& .counter {
+				margin-left: 24px;
+			}
+		}
+
+		& span {
+			float: left;
+		}
+	}
+
+	&__content {
+		& span {
+			background: rgba($color: #fff, $alpha: .1);
+			color: var(--tp-common-white);
+			@include transition(0.4s);
+			padding: 12px 31px;
+			z-index: 9;
+			position: relative;
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+
+}
+.tpfact-2 {
+	@media #{$lg, $md, $xs} {
+		margin-left: 0px;
+	}
+}
+.tpfact-2:hover .tpfact-2__content span {
+	background: var(--tp-common-white);
+	color: var(--tp-heading-primary);
+}
+
+.tp-fact-area {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.counter {
+	&__content {
+		& p {
+			font-size: 15px;
+
+			@media #{$md} {
+				float: right;
+			}
+		}
+	}
+}
