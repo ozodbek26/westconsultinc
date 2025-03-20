@@ -1,478 +1,622 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Insurez - Insurance Company HTML Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Insurez - Insurance Company HTML Template </title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/logo/favicon.png"
+    />
 
-   <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-   <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/flaticon.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/main.css">
-</head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<body>
-   <!--[if lte IE 9]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-      <![endif]-->
-
-
-   <!-- pre loader area start -->
-   <div id="loading">
+    <!-- pre loader area start -->
+    <div id="loading">
       <div id="loading-center">
-         <div id="loading-center-absolute">
-            <div class="object" id="object_one"></div>
-            <div class="object" id="object_two"></div>
-            <div class="object" id="object_three"></div>
-            <div class="object" id="object_four"></div>
-         </div>
+        <div id="loading-center-absolute">
+          <div class="object" id="object_one"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_three"></div>
+          <div class="object" id="object_four"></div>
+        </div>
       </div>
-   </div>
-   <!-- pre loader area end -->
+    </div>
+    <!-- pre loader area end -->
 
-   <!-- back to top start -->
-   <div class="back-to-top-wrapper">
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
       <button id="back_to_top" type="button" class="back-to-top-btn">
-         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-               stroke-linejoin="round" />
-         </svg>
+        <svg
+          width="12"
+          height="7"
+          viewBox="0 0 12 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 6L6 1L1 6"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </button>
-   </div>
-   <!-- back to top end -->
-   <!-- search popup start -->
-   <div class="search__popup z-index-8">
+    </div>
+    <!-- back to top end -->
+    <!-- search popup start -->
+    <div class="search__popup z-index-8">
       <div class="container">
-         <div class="row">
-            <div class="col-xxl-12">
-               <div class="search__wrapper">
-                  <div class="search__top d-flex justify-content-between align-items-center">
-                     <div class="search__logo">
-                        <a href="index.html">
-                           <img src="assets/img/logo/logo.png" alt="logo">
-                        </a>
-                     </div>
-                     <div class="search__close">
-                        <button type="button" class="search__close-btn search-close-btn">
-                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                              <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                           </svg>
-                        </button>
-                     </div>
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="search__wrapper">
+              <div
+                class="search__top d-flex justify-content-between align-items-center"
+              >
+                <div class="search__logo">
+                  <a href="index.html">
+                    <img src="assets/img/logo/logo.png" alt="logo" />
+                  </a>
+                </div>
+                <div class="search__close">
+                  <button
+                    type="button"
+                    class="search__close-btn search-close-btn"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 1L1 17"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1 1L17 17"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="search__form">
+                <form action="#">
+                  <div class="search__input">
+                    <input
+                      class="search-input-field"
+                      type="text"
+                      placeholder="Type here to search..."
+                    />
+                    <span class="search-focus-border"></span>
+                    <button type="submit">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M19.0002 19.0002L17.2002 17.2002"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
                   </div>
-                  <div class="search__form">
-                     <form action="#">
-                        <div class="search__input">
-                           <input class="search-input-field" type="text" placeholder="Type here to search...">
-                           <span class="search-focus-border"></span>
-                           <button type="submit">
-                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
-                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                 <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                           </button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
+                </form>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="search-popup-overlay"></div>
-   <!-- search popup end -->
-   <!-- header area start -->
-   <header class="main-header d-none d-lg-block">
+    </div>
+    <div class="search-popup-overlay"></div>
+    <!-- search popup end -->
+    <!-- header area start -->
+    <header class="main-header d-none d-lg-block">
       <div class="tp-header">
-         <div id="header-sticky" class="tp-header__wrapper-inner">
-            <div class="tp-header__logo grey-bg-1">
-               <a href="index.html"><img src="assets/img/logo/logo-black.png" alt=""></a>
+        <div id="header-sticky" class="tp-header__wrapper-inner">
+          <div class="tp-header__logo grey-bg-1">
+            <a href="index.html"
+              ><img src="assets/img/logo/logo-black.png" alt=""
+            /></a>
+          </div>
+          <div class="tp-header__main-header">
+            <div class="tp-header__top grey-bg-2">
+              <div class="tp-header__top-left text-left">
+                <p class="tp-header-top-left-text white-text">
+                  WEST CONSULT INC
+                </p>
+              </div>
+              <div class="tp-header__top-right text-end white-text">
+                <div class="tp-location mr-30">
+                  <a
+                    href="https://www.google.com.co/maps/place/890+N+State+St,+Elgin,+IL+60123,+США/@42.0554352,-88.2985164,17z/data=!3m1!4b1!4m6!3m5!1s0x880f056ff4b76fe9:0x846ef8c3930b5206!8m2!3d42.0554352!4d-88.2959415!16s%2Fg%2F11cp7ym2dw?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                  >
+                    <i class="fa-sharp fa-solid fa-location-dot"></i> 66
+                    Broklyne Golden Street, USA</a
+                  >
+                </div>
+                <div class="envelope">
+                  <a href="mailto:safety.westconsult@gmail.com"
+                    ><i class="fa-solid fa-envelope"></i>
+                    safety.westconsult@gmail.com</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="tp-header__main-header">
-               <div class="tp-header__top grey-bg-2">
-                  <div class="tp-header__top-left text-left">
-                     <p class="tp-header-top-left-text white-text">WEST CONSULT INC</p>
-                  </div>
-                  <div class="tp-header__top-right text-end white-text">
-                     <div class="tp-location mr-30">
-                        <a href="https://www.google.com.co/maps/place/890+N+State+St,+Elgin,+IL+60123,+США/@42.0554352,-88.2985164,17z/data=!3m1!4b1!4m6!3m5!1s0x880f056ff4b76fe9:0x846ef8c3930b5206!8m2!3d42.0554352!4d-88.2959415!16s%2Fg%2F11cp7ym2dw?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
-                           target="_blank"> <i class="fa-sharp fa-solid fa-location-dot"></i> 66
-                           Broklyne Golden Street, USA</a>
-                     </div>
-                     <div class="envelope">
-                        <a href="mailto:safety.westconsult@gmail.com"><i class="fa-solid fa-envelope"></i>
-                           safety.westconsult@gmail.com</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="tp-main-menu">
-                  <div class="tp-header__bottom d-flex align-items-center justify-content-between">
-                     <div class="main-menu">
-                        <div class="tp-header__wrapper-inner">
-                          <div class="tp-header__menu text-center">
-                            <nav id="mobile-menu">
-                              <ul>
-                                <li class="has-dropdown">
-                                  <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                  <a href="Insurance_01.html">Service</a>
-                                </li>
-                                <li>
-                                  <a href="about.html">About Us</a>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
-                              </ul>
-                            </nav>
-                          </div>
-                        </div>
-                      </div>
-                     <div class="tp-header__right-box d-flex justify-content-end align-items-center">
-                        <div class="tp-header__right d-flex align-items-center">
-                           <div class="tp-header-search search-open-btn">
-                              <a href="javascript:void(0);"> <i class="fa-regular fa-magnifying-glass"></i></a>
-                           </div>
-                           <div class="tp-header__contact-number">
-                              <div class="sm-clist__icon">
-                                 <i class="flaticon-telephone"></i>
-                              </div>
-                              <div class="sm-clist__text text-start ml-15 mr-25">
-                                 <span>Call Us Anytime</span>
-                                 <a href="tel:+18723340670">+1 (872) 334-0670 </a>
-                              </div>
-                           </div>
-                           <div class="tp-header-btn">
-                              <a class="tp-btn" href="contact.html">Get a Quote</a>
-                           </div>
-                        </div>
-                        <div class="sidebar__menu">
-                           <a class="tp-menu-bar text-black" href="#"><i class="fa-solid fa-bars"></i></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </header>
-   <div class="mobile-header d-lg-none ">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-6">
-               <div class="mobile__logo">
-                  <a href="index.html"><img src="assets/img/logo/logo-black.png" alt=""></a>
-               </div>
-            </div>
-            <div class="col-6">
-               <div class="mobile__menu text-end">
-                  <a class="tp-menu-bar" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- header area end -->
-   <!-- tp-offcanvus-area-start -->
-   <div class="tpoffcanvas-area">
-      <div class="offcanvas__wrapper">
-         <div class="tpoffcanvas">
-            <div class="tpoffcanvas__close-btn">
-               <button class="close-btn"><i class="fal fa-times"></i></button>
-            </div>
-            <div class="tpoffcanvas__logo">
-               <a href="index.html">
-                  <img src="assets/img/logo/logo-black.png" alt="">
-               </a>
-            </div>
-            <div class="mobile-menu"></div>
-            <div class="tpoffcanvas__contact">
-               <h4 class="tpoffcanvas__title">Contacts</h4>
-               <div class="tpoffcanvas__contact-content d-flex">
-                  <div class="tpoffcanvas__contact-content-icon">
-                     <i class="fa-sharp fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="tpoffcanvas__contact-content-content">
-                     <a
-                        href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86
-                        Road Broklyn Street, 600 </a>
-                  </div>
-               </div>
-               <div class="tpoffcanvas__contact-content d-flex">
-                  <div class="tpoffcanvas__contact-content-icon">
-                     <i class="fa-solid fa-envelope"></i>
-                  </div>
-                  <div class="tpoffcanvas__contact-content-content">
-                     <a href="mailto:safety.westconsult@gmail.com"> safety.westconsult@gmail.com </a>
-                  </div>
-               </div>
-               <div class="tpoffcanvas__contact-content d-flex">
-                  <div class="tpoffcanvas__contact-content-icon">
-                     <i class="fa-solid fa-phone"></i>
-                  </div>
-                  <div class="tpoffcanvas__contact-content-content">
-                     <a href="tel:+18723340670"> +1 (872) 334-0670</a>
-                  </div>
-               </div>
-            </div>
-            <div class="tpoffcanvas__social">
-               <a class="icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-               <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
-               <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
-               <a class="icon linkedin" href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="body-overlay"></div>
-   <!-- tp-offcanvus-area-end -->
-   <!--  breadcrumb-area  start -->
-   <div class="wrapper-box p-relative ">
-      <div class="breadcrumb__bg breadcrumb__bg__overlay pt-130 pb-130 "
-         data-background="assets/img/breadcrumb/breadcrumb-bg-1.jpg">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-12">
-                  <div class="breadcrumb__content p-relative z-index-1 text-center">
-                     <div class="breadcrumb__list mb-10">
-                        <span><a href="index.html">INSUREZ </a></span>
-                        <span class="dvdr"> / </span>
-                        <span class="sub-page-black">Contact Us</span>
-                     </div>
-                     <h3 class="breadcrumb__title mb-20">Contact Us</h3>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!--  breadcrumb-area  end -->
-   <!-- contact area start -->
-   <div class="tp-faq-area pb-120 pt-50 grey-bg-1 p-relative">
-      <div class="container">
-         <div class="row">
-            <div class="col-xl-5 col-lg-5 col-md-6 col-12">
-               <div class="contact">
-                  <div class="contact__form mb-30">
-                     <form id="contact-form" action="assets/mail.php">
-                        <div class="contact__form-wrap">
-                           <div class="tp-form-box">
-                              <span class="tp-form-subtitle right">contact us</span>
-                              <h2 class="tp-form-title mb-30 mt-10">
-                                 Write an email
-                              </h2>
-                           </div>
-                           <div class="contact__input">
-                              <input class="w-100" type="text" placeholder="Enter name" name="name" required="">
-                           </div>
-                           <div class="contact__input">
-                              <input class="w-100" type="email" placeholder="Email address" name="email" required="">
-                           </div>
-                           <div class="contact__input">
-                              <input class="w-100" type="text" placeholder="Phone number" name="number" required="">
-                           </div>
-                           <div class="contact__input">
-                              <textarea class="w-100" placeholder="Message" name="message" required=""></textarea>
-                           </div>
-
-                           <div class="contact__button">
-                              <button class="tp-btn-3" type="submit">SEND A MEASSAGE</button>
-                           </div>
-                        </div>
-                     </form>
-                     <p class="ajax-response"></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-7 col-lg-7 col-md-6 col-12">
-               <div class="contact ml-40">
-                  <div class="map-area">
-                     <div class="tpmap-wrapper">
-                        <iframe
-                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13026973.62891735!2d-106.25469552110826!3d37.14286659523624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1681626899539!5m2!1sen!2sbd"
-                           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                           referrerpolicy="no-referrer-when-downgrade"></iframe>
-                     </div>
-                  </div>
-                  <div class="contact__wrap mt-25">
-                     <div class="contact__info-item d-flex align-items-start mb-35">
-                        <div class="contact__info-icon">
-                           <i class="flaticon-phone-call-1"></i>
-                        </div>
-                        <div class="contact__info-text">
-                           <h4>+92 (005) 45-678</h4>
-                        </div>
-                     </div>
-                     <div class="contact__info-item d-flex align-items-start mb-35">
-                        <div class="contact__info-icon">
-                           <i class="flaticon-email"></i>
-                        </div>
-                        <div class="contact__info-text">
-                           <h4>needhaelph@company.com</h4>
-                        </div>
-                     </div>
-                     <div class="contact__info-item d-flex align-items-start">
-                        <div class="contact__info-icon">
-                           <i class="flaticon-location-1"></i>
-                        </div>
-                        <div class="contact__info-text">
-                           <h4>55 Main street, California USA</h4>
-                        </div>
-                     </div>
-                     <div class="contact__social pt-30">
-                        <div class="icon">
-                           <ul>
-                              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- contact area end -->
-   <!-- cta  area start -->
-   <div class="tp-cta-4__area p-relative cta-mlr" data-background="assets/img/cta/cta-bg-4.png">
-      <div class="container ">
-         <div class="tp-cta-4__bg ">
-            <div class="row align-items-center">
-               <div class="col-xl-8">
-                  <h3 class="cta-titile">Find an Insurance Agent or Start
-                     Tracking your Claims</h3>
-               </div>
-               <div class="col-xl-4">
-                  <div class="tp-cta-4__right text-end">
-                     <div class="tp-cta-4__btn pt-10">
-                        <a class="tp-btn-black" href="#">TAKE YOUR CLAIM</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- cta  area end -->
-   <!-- footer  area start -->
-   <div class="footer__area" data-background="assets/img/footer/img.jpg">
-      <div class="footer__top pt-220 pb-90">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-3 col-lg-6 col-md-6  col-sm-6">
-                  <div class="footer__widget footer__widget-1 pb-30">
-                     <div class="footer__logo">
-                        <div class="logo">
-                           <a href="index.html">
-                              <img src="assets/img/logo/logo.png" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="footer__widget-content">
-                        <div class="footer__widget-info">
-                           <p>Phasellus luctus nibh utfinibultricies. Nulla sit amet urna purus. Aenean vulputate libero
-                              nulla.</p>
-                           <div class="footer__social">
-                              <ul>
-                                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                 <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                 <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
-                  <div class="footer__widget footer__widget-2 pb-30">
-                     <h4 class="footer__widget-title footer__widget-title-2">Contact</h4>
-                     <div class="footer__contact-info tp-footer__icon-space">
+            <div class="tp-main-menu">
+              <div
+                class="tp-header__bottom d-flex align-items-center justify-content-between"
+              >
+                <div class="main-menu">
+                  <div class="tp-header__wrapper-inner">
+                    <div class="tp-header__menu text-center">
+                      <nav id="mobile-menu">
                         <ul>
-                           <li>
-                              <span>
-                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
-                              </span>
-                              <a href="https://www.google.com/maps/@41.6758525,-86.2531698,18.17z" target="_blank">2390
-                                 NBW 2nd Ave, Miami FLT
-                                 33127, USA</a>
-                           </li>
-                           <li>
-                              <span>
-                                 <i class="fa-sharp fa-solid fa-phone"></i>
-                              </span>
-                              <a href="tel:+806(000)8899">+1 305 677-4352</a>
-                           </li>
-                           <li>
-                              <span>
-                                 <i class="fa-solid fa-clock"></i>
-                              </span>
-                              <a href="">Mon - Sat: 8:00 am - 6:00 pm
-                                 Sunday: closed</a>
-                           </li>
-
+                          <li class="has-dropdown">
+                            <a href="index.html">Home</a>
+                          </li>
+                          <li>
+                            <a href="Insurance_01.html">Our services</a>
+                          </li>
+                          <li>
+                            <a href="about.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="faqs.html">FAQ</a>
+                          </li>
+                          <li><a href="contact.html">Contact</a></li>
                         </ul>
-                     </div>
+                      </nav>
+                    </div>
                   </div>
-               </div>
-           
+                </div>
+                <div
+                  class="tp-header__right-box d-flex justify-content-end align-items-center"
+                >
+                  <div class="tp-header__right d-flex align-items-center">
+                    <div class="tp-header-search search-open-btn">
+                      <a href="javascript:void(0);">
+                        <i class="fa-regular fa-magnifying-glass"></i
+                      ></a>
+                    </div>
+                    <div class="tp-header__contact-number">
+                      <div class="sm-clist__icon">
+                        <i class="flaticon-telephone"></i>
+                      </div>
+                      <div class="sm-clist__text text-start ml-15 mr-25">
+                        <span>Call Us Anytime</span>
+                        <a href="tel:+18723340670">+1 (872) 334-0670 </a>
+                      </div>
+                    </div>
+                    <div class="tp-header-btn">
+                      <a class="tp-btn" href="contact.html">Get a Quote</a>
+                    </div>
+                  </div>
+                  <div class="sidebar__menu">
+                    <a class="tp-menu-bar text-black" href="#"
+                      ><i class="fa-solid fa-bars"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-header d-lg-none">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div class="mobile__logo">
+              <a href="index.html"
+                ><img src="assets/img/logo/logo-black.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mobile__menu text-end">
+              <a class="tp-menu-bar" href="javascript:void(0)"
+                ><i class="fa-solid fa-bars"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header area end -->
+    <!-- tp-offcanvus-area-start -->
+    <div class="tpoffcanvas-area">
+      <div class="offcanvas__wrapper">
+        <div class="tpoffcanvas">
+          <div class="tpoffcanvas__close-btn">
+            <button class="close-btn"><i class="fal fa-times"></i></button>
+          </div>
+          <div class="tpoffcanvas__logo">
+            <a href="index.html">
+              <img src="assets/img/logo/logo-black.png" alt="" />
+            </a>
+          </div>
+          <div class="mobile-menu"></div>
+          <div class="tpoffcanvas__contact">
+            <h4 class="tpoffcanvas__title">Contacts</h4>
+            <div class="tpoffcanvas__contact-content d-flex">
+              <div class="tpoffcanvas__contact-content-icon">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+              </div>
+              <div class="tpoffcanvas__contact-content-content">
+                <a
+                  href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1"
+                  >86 Road Broklyn Street, 600
+                </a>
+              </div>
+            </div>
+            <div class="tpoffcanvas__contact-content d-flex">
+              <div class="tpoffcanvas__contact-content-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="tpoffcanvas__contact-content-content">
+                <a href="mailto:safety.westconsult@gmail.com">
+                  safety.westconsult@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="tpoffcanvas__contact-content d-flex">
+              <div class="tpoffcanvas__contact-content-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="tpoffcanvas__contact-content-content">
+                <a href="tel:+18723340670"> +1 (872) 334-0670</a>
+              </div>
+            </div>
+          </div>
+          <div class="tpoffcanvas__social">
+            <a class="icon facebook" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="icon linkedin" href="#"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+    <!--  breadcrumb-area  start -->
+    <div class="wrapper-box p-relative">
+      <div
+        class="breadcrumb__bg breadcrumb__bg__overlay pt-130 pb-130"
+        data-background="assets/img/breadcrumb/breadcrumb-bg-1.jpg"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="breadcrumb__content p-relative z-index-1 text-center">
+                <div class="breadcrumb__list mb-10">
+                  <span><a href="index.html">INSUREZ </a></span>
+                  <span class="dvdr"> / </span>
+                  <span class="sub-page-black">Contact Us</span>
+                </div>
+                <h3 class="breadcrumb__title mb-20">Contact Us</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  breadcrumb-area  end -->
+    <!-- contact area start -->
+    <div class="tp-faq-area pb-120 pt-50 grey-bg-1 p-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5 col-md-6 col-12">
+            <div class="contact">
+              <div class="contact__form mb-30">
+                <form id="contact-form" action="assets/mail.php">
+                  <div class="contact__form-wrap">
+                    <div class="tp-form-box">
+                      <span class="tp-form-subtitle right">contact us</span>
+                      <h2 class="tp-form-title mb-30 mt-10">Write an email</h2>
+                    </div>
+                    <div class="contact__input">
+                      <input
+                        class="w-100"
+                        type="text"
+                        placeholder="Enter name"
+                        name="name"
+                        required=""
+                      />
+                    </div>
+                    <div class="contact__input">
+                      <input
+                        class="w-100"
+                        type="email"
+                        placeholder="Email address"
+                        name="email"
+                        required=""
+                      />
+                    </div>
+                    <div class="contact__input">
+                      <input
+                        class="w-100"
+                        type="text"
+                        placeholder="Phone number"
+                        name="number"
+                        required=""
+                      />
+                    </div>
+                    <div class="contact__input">
+                      <textarea
+                        class="w-100"
+                        placeholder="Message"
+                        name="message"
+                        required=""
+                      ></textarea>
+                    </div>
+
+                    <div class="contact__button">
+                      <button class="tp-btn-3" type="submit">
+                        SEND A MEASSAGE
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <p class="ajax-response"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-6 col-12">
+            <div class="contact ml-40">
+              <div class="map-area">
+                <div class="tpmap-wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13026973.62891735!2d-106.25469552110826!3d37.14286659523624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1681626899539!5m2!1sen!2sbd"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="contact__wrap mt-25">
+                <div class="contact__info-item d-flex align-items-start mb-35">
+                  <div class="contact__info-icon">
+                    <i class="flaticon-phone-call-1"></i>
+                  </div>
+                  <div class="contact__info-text">
+                    <h4>+92 (005) 45-678</h4>
+                  </div>
+                </div>
+                <div class="contact__info-item d-flex align-items-start mb-35">
+                  <div class="contact__info-icon">
+                    <i class="flaticon-email"></i>
+                  </div>
+                  <div class="contact__info-text">
+                    <h4>needhaelph@company.com</h4>
+                  </div>
+                </div>
+                <div class="contact__info-item d-flex align-items-start">
+                  <div class="contact__info-icon">
+                    <i class="flaticon-location-1"></i>
+                  </div>
+                  <div class="contact__info-text">
+                    <h4>55 Main street, California USA</h4>
+                  </div>
+                </div>
+                <div class="contact__social pt-30">
+                  <div class="icon">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact area end -->
+    <!-- cta  area start -->
+    <div
+      class="tp-cta-4__area p-relative cta-mlr"
+      data-background="assets/img/cta/cta-bg-4.png"
+    >
+      <div class="container">
+        <div class="tp-cta-4__bg">
+          <div class="row align-items-center">
+            <div class="col-xl-8">
+              <h3 class="cta-titile">
+                Find an Insurance Agent or Start Tracking your Claims
+              </h3>
+            </div>
+            <div class="col-xl-4">
+              <div class="tp-cta-4__right text-end">
+                <div class="tp-cta-4__btn pt-10">
+                  <a class="tp-btn-black" href="#">TAKE YOUR CLAIM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cta  area end -->
+    <!-- footer  area start -->
+    <div class="footer__area" data-background="assets/img/footer/img.jpg">
+      <div class="footer__top pt-220 pb-90">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="footer__widget footer__widget-1 pb-30">
+                <div class="footer__logo">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="assets/img/logo/logo.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="footer__widget-content">
+                  <div class="footer__widget-info">
+                    <p>
+                      Phasellus luctus nibh utfinibultricies. Nulla sit amet
+                      urna purus. Aenean vulputate libero nulla.
+                    </p>
+                    <div class="footer__social">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa-brands fa-pinterest-p"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="footer__widget footer__widget-2 pb-30">
+                <h4 class="footer__widget-title footer__widget-title-2">
+                  Contact
+                </h4>
+                <div class="footer__contact-info tp-footer__icon-space">
+                  <ul>
+                    <li>
+                      <span>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                      </span>
+                      <a
+                        href="https://www.google.com/maps/@41.6758525,-86.2531698,18.17z"
+                        target="_blank"
+                        >2390 NBW 2nd Ave, Miami FLT 33127, USA</a
+                      >
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                      </span>
+                      <a href="tel:+806(000)8899">+1 305 677-4352</a>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-clock"></i>
+                      </span>
+                      <a href="">Mon - Sat: 8:00 am - 6:00 pm Sunday: closed</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="footer__bottom grey-bg-2 pt-25 pb-25">
-         <div class="container">
-            <div class="footer__bottom-inner">
-               <div class="row">
-                  <div class="col-xxl-12">
-                     <div class="footer__copyright text-center">
-                        <p>© Copyright 2023, Insurez. All Rights Reserved</p>
-                     </div>
-                  </div>
-               </div>
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="footer__copyright text-center">
+                  <p>© Copyright 2023, Insurez. All Rights Reserved</p>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- footer  area end -->
-   <!-- JS here -->
-   <script src="assets/js/vendor/jquery.js"></script>
-   <script src="assets/js/vendor/waypoints.js"></script>
-   <script src="assets/js/bootstrap-bundle.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/main.js"></script>
-</body>
-
+    </div>
+    <!-- footer  area end -->
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/bootstrap-bundle.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
