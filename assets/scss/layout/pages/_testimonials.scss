@@ -296,7 +296,7 @@
 		&::after {
 			position: absolute;
 			content: '';
-			background: #0a6252;
+			background: var(--tp-theme-2);
 			width: 60px;
 			height: 80px;
 			bottom: -23px;
