@@ -135,6 +135,7 @@ li,
   --tp-theme-1: #132a3b;
   --tp-theme-2: #5ca8d9;
   --tp-theme-3: #132a3b;
+  --tp-theme-4: #132a3bd3;
   --tp-border-primary: #132a3b;
 
 
@@ -5543,18 +5544,18 @@ button:focus:not(:focus-visible) {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-slider-title {
-    font-size: 50px;
+    font-size: 37px;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 575px) {
   .tp-slider-title {
-    font-size: 50px;
+    font-size: 35px;
     padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {
   .tp-slider-title {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 20px;
   }
 }
@@ -8275,6 +8276,7 @@ button:focus:not(:focus-visible) {
 /*  7.6 counter css
 /*----------------------------------------*/
 .tp-fact-area {
+  background-color: var(--tp-theme-4);
   background-size: cover;
   background-position: center;
   position: relative;
