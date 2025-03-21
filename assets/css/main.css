@@ -2293,6 +2293,16 @@ div.demo img {
   -webkit-transition: 0.5s;
 }
 
+@media (min-width: 1080px) {
+  .accordion-style .btn-link{
+    min-height: 82px !important
+  }
+
+  .accordion-style .btn-link:after{
+    top: 24px !important
+  }
+}
+
 .accordion-style .btn-link {
   color: var(--tp-heading-primary);
   line-height: 20px;
