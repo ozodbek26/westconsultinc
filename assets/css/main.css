@@ -3163,6 +3163,9 @@ button:focus:not(:focus-visible) {
 .tp-header__menu ul li .sub-menu li a:hover {
   color: #fbd45b;
 }
+.active{
+  color: #fbd45b !important
+}
 .tp-header__menu ul li .sub-menu li:not(:last-child) {
   margin-bottom: 10px;
 }
