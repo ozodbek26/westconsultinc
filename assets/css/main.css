@@ -4767,7 +4767,7 @@ button:focus:not(:focus-visible) {
 }
 
 .inctec {
-  color: #0a6252;
+  color: var(--tp-theme-2);
 }
 .footer__widget {
   z-index: 9;
@@ -8053,7 +8053,7 @@ button:focus:not(:focus-visible) {
 .tp-testimonial-2__bottom-color::after {
   position: absolute;
   content: "";
-  background: #0a6252;
+  background: var(--tp-theme-2);
   width: 60px;
   height: 80px;
   bottom: -23px;
