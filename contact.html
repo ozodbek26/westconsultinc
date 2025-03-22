@@ -177,10 +177,11 @@
               <div class="tp-header__top-right text-end white-text">
                 <div class="tp-location mr-30">
                   <a
-                  href="https://www.google.com.co/maps/place/890+N+State+St,+Elgin,+IL+60123,+США/@42.0554352,-88.2985164,17z/data=!3m1!4b1!4m6!3m5!1s0x880f056ff4b76fe9:0x846ef8c3930b5206!8m2!3d42.0554352!4d-88.2959415!16s%2Fg%2F11cp7ym2dw?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
+                    href="https://www.google.com.co/maps/place/890+N+State+St,+Elgin,+IL+60123,+США/@42.0554352,-88.2985164,17z/data=!3m1!4b1!4m6!3m5!1s0x880f056ff4b76fe9:0x846ef8c3930b5206!8m2!3d42.0554352!4d-88.2959415!16s%2Fg%2F11cp7ym2dw?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
                   >
-                    <i class="fa-sharp fa-solid fa-location-dot"></i> 890 N State St Elgin, IL 60123</a
+                    <i class="fa-sharp fa-solid fa-location-dot"></i> 890 N
+                    State St Elgin, IL 60123</a
                   >
                 </div>
                 <div class="envelope">
@@ -212,7 +213,9 @@
                           <li>
                             <a href="faqs.html">FAQ</a>
                           </li>
-                          <li><a class="active" href="contact.html">Contact</a></li>
+                          <li>
+                            <a class="active" href="contact.html">Contact</a>
+                          </li>
                         </ul>
                       </nav>
                     </div>
@@ -363,7 +366,7 @@
           <div class="col-xl-5 col-lg-5 col-md-6 col-12">
             <div class="contact">
               <div class="contact__form mb-30">
-                <form id="contact-form" action="assets/mail.php">
+                <form id="contact-form_id" class="сontact-form-validated">
                   <div class="contact__form-wrap">
                     <div class="tp-form-box">
                       <span class="tp-form-subtitle right">contact us</span>
@@ -374,7 +377,6 @@
                         class="w-100"
                         type="text"
                         placeholder="Enter name"
-                        name="name"
                         required=""
                       />
                     </div>
@@ -383,7 +385,6 @@
                         class="w-100"
                         type="email"
                         placeholder="Email address"
-                        name="email"
                         required=""
                       />
                     </div>
@@ -392,15 +393,14 @@
                         class="w-100"
                         type="text"
                         placeholder="Phone number"
-                        name="number"
                         required=""
                       />
                     </div>
+
                     <div class="contact__input">
                       <textarea
                         class="w-100"
                         placeholder="Message"
-                        name="message"
                         required=""
                       ></textarea>
                     </div>
@@ -429,7 +429,6 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
-                  
                 </div>
               </div>
               <div class="contact__wrap mt-25">
@@ -487,24 +486,22 @@
       class="tp-cta-4__area p-relative cta-mlr"
       data-background="assets/img/cta/cta-bg-4.png"
     >
-    <div class="container">
-      <div class="tp-cta-4__bg">
-        <div class="row align-items-center">
-          <div class="col-xl-8">
-            <h3 class="cta-titile">
-              Know about West Consult INC
-            </h3>
-          </div>
-          <div class="col-xl-4">
-            <div class="tp-cta-4__right text-end">
-              <div class="tp-cta-4__btn pt-10">
-                <a class="tp-btn-black" href="about.html">Read More</a>
+      <div class="container">
+        <div class="tp-cta-4__bg">
+          <div class="row align-items-center">
+            <div class="col-xl-8">
+              <h3 class="cta-titile">Know about West Consult INC</h3>
+            </div>
+            <div class="col-xl-4">
+              <div class="tp-cta-4__right text-end">
+                <div class="tp-cta-4__btn pt-10">
+                  <a class="tp-btn-black" href="about.html">Read More</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- cta  area end -->
     <!-- footer  area start -->
@@ -623,5 +620,6 @@
     <script src="assets/js/imagesloaded-pkgd.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/send_message_from_contact_page.js"></script>
   </body>
 </html>

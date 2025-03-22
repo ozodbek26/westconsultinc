@@ -1075,7 +1075,7 @@
               <div class="tp-section-subtitle mb-15">Our Testimonials</div>
               <h2 class="tp-section-title mb-20">
                 What our clients say about <br />
-                our insurez
+                our service
               </h2>
             </div>
           </div>
@@ -1457,31 +1457,42 @@
                 >
                   <div class="tp-contact-form-wrapper">
                     <div class="contact-section-title-box">
-                      <h4 class="tp-contact-sm-title">
+                      <!-- <h4 class="tp-contact-sm-title">
                         Vehicles insurance quote
-                      </h4>
+                      </h4> -->
                     </div>
                     <div class="contactform">
-                      <form action="#">
+                      <form class="request__form-body">
                         <div class="contactform__input">
-                          <input type="text" placeholder="Full name" />
+                          <input
+                            required=""
+                            type="text"
+                            placeholder="Full name"
+                          />
                         </div>
                         <div class="contactform__input">
-                          <input type="text" placeholder="Email" />
+                          <input required="" type="email" placeholder="Email" />
                         </div>
                         <div class="contactform__input">
-                          <input type="text" placeholder="Phone number" />
+                          <input
+                            required=""
+                            type="text"
+                            placeholder="Phone number"
+                          />
                         </div>
                         <div class="text_area">
                           <textarea
                             type="text"
-                            placeholder="Comment"
+                            required=""
+                            placeholder="Message"
                           ></textarea>
                         </div>
+                        <!-- <div id="error_message"></div>
+                        <div id="success_message"></div> -->
 
                         <div class="tpcta__btn">
                           <button class="tp-btn" type="submit">
-                            GET FREE QUOTE
+                            SEND A MESSAGE
                           </button>
                         </div>
                       </form>
@@ -1495,62 +1506,11 @@
                   aria-labelledby="nav-Car-tab"
                   tabindex="0"
                 >
-                  <div class="tp-contact-form-wrapper">
+                  <!-- <div class="tp-contact-form-wrapper">
                     <div class="contact-section-title-box">
                       <h4 class="tp-contact-sm-title">Car Insurance</h4>
                     </div>
-                    <div class="contactform">
-                      <form action="#">
-                        <div class="contactform__input">
-                          <input type="text" placeholder="Full name" />
-                        </div>
-                        <div class="contactform__input">
-                          <input type="text" placeholder="Email" />
-                        </div>
-                        <div class="contactform__select">
-                          <div class="tp-sp-icon">
-                            <select style="display: none">
-                              <option>Property Type</option>
-                              <option>Home Insurance</option>
-                              <option>Car Insurance</option>
-                              <option>Health Insurance</option>
-                              <option>Life Insurance</option>
-                            </select>
-                            <div class="nice-select" tabindex="0">
-                              <span class="current"
-                                >Select type of insurance</span
-                              >
-                              <ul class="list">
-                                <li
-                                  data-value="Property Type"
-                                  class="option selected"
-                                >
-                                  Property Type
-                                </li>
-                                <li data-value="Home Insurance" class="option">
-                                  Home Insurance
-                                </li>
-                                <li data-value="Car Insurance" class="option">
-                                  Car Insurance
-                                </li>
-                                <li
-                                  data-value="Health Insurance"
-                                  class="option"
-                                >
-                                  Health Insurance
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tpcta__btn">
-                          <button class="tp-btn" type="submit">
-                            GET FREE QUOTE
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                  </div> -->
                 </div>
                 <div
                   class="tab-pane fade"
@@ -1562,57 +1522,6 @@
                   <div class="tp-contact-form-wrapper">
                     <div class="contact-section-title-box">
                       <h4 class="tp-contact-sm-title">Life Insurance</h4>
-                    </div>
-                    <div class="contactform">
-                      <form action="#">
-                        <div class="contactform__input">
-                          <input type="text" placeholder="Full name" />
-                        </div>
-                        <div class="contactform__input">
-                          <input type="text" placeholder="Email" />
-                        </div>
-                        <div class="contactform__select">
-                          <div class="tp-sp-icon">
-                            <select style="display: none">
-                              <option>Property Type</option>
-                              <option>Home Insurance</option>
-                              <option>Car Insurance</option>
-                              <option>Health Insurance</option>
-                              <option>Life Insurance</option>
-                            </select>
-                            <div class="nice-select" tabindex="0">
-                              <span class="current"
-                                >Select type of insurance</span
-                              >
-                              <ul class="list">
-                                <li
-                                  data-value="Property Type"
-                                  class="option selected"
-                                >
-                                  Property Type
-                                </li>
-                                <li data-value="Home Insurance" class="option">
-                                  Home Insurance
-                                </li>
-                                <li data-value="Car Insurance" class="option">
-                                  Car Insurance
-                                </li>
-                                <li
-                                  data-value="Health Insurance"
-                                  class="option"
-                                >
-                                  Health Insurance
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tpcta__btn">
-                          <button class="tp-btn" type="submit">
-                            GET FREE QUOTE
-                          </button>
-                        </div>
-                      </form>
                     </div>
                   </div>
                 </div>
@@ -1626,57 +1535,6 @@
                   <div class="tp-contact-form-wrapper">
                     <div class="contact-section-title-box">
                       <h4 class="tp-contact-sm-title">Health Insurance</h4>
-                    </div>
-                    <div class="contactform">
-                      <form action="#">
-                        <div class="contactform__input">
-                          <input type="text" placeholder="Full name" />
-                        </div>
-                        <div class="contactform__input">
-                          <input type="text" placeholder="Email" />
-                        </div>
-                        <div class="contactform__select">
-                          <div class="tp-sp-icon">
-                            <select style="display: none">
-                              <option>Property Type</option>
-                              <option>Home Insurance</option>
-                              <option>Car Insurance</option>
-                              <option>Health Insurance</option>
-                              <option>Life Insurance</option>
-                            </select>
-                            <div class="nice-select" tabindex="0">
-                              <span class="current"
-                                >Select type of insurance</span
-                              >
-                              <ul class="list">
-                                <li
-                                  data-value="Property Type"
-                                  class="option selected focus"
-                                >
-                                  Property Type
-                                </li>
-                                <li data-value="Home Insurance" class="option">
-                                  Home Insurance
-                                </li>
-                                <li data-value="Car Insurance" class="option">
-                                  Car Insurance
-                                </li>
-                                <li
-                                  data-value="Health Insurance"
-                                  class="option"
-                                >
-                                  Health Insurance
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tpcta__btn">
-                          <button class="tp-btn" type="submit">
-                            GET FREE QUOTE
-                          </button>
-                        </div>
-                      </form>
                     </div>
                   </div>
                 </div>
@@ -1962,5 +1820,6 @@
     <script src="assets/js/imagesloaded-pkgd.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/send_message.js"></script>
   </body>
 </html>

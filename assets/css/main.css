@@ -138,7 +138,6 @@ li,
   --tp-theme-4: #132a3bd3;
   --tp-border-primary: #132a3b;
 
-
   /* Blue scheme */
   /* --tp-common-white: #fff;
   --tp-common-black: #000;
@@ -2250,7 +2249,7 @@ div.demo img {
 }
 .breadcrumb__bg__overlay {
   position: relative;
-  background-color: #132a3b;;
+  background-color: #132a3b;
   background-blend-mode: luminosity;
   z-index: -1;
 }
@@ -2310,12 +2309,12 @@ div.demo img {
 }
 
 @media (min-width: 1080px) {
-  .accordion-style .btn-link{
-    min-height: 82px !important
+  .accordion-style .btn-link {
+    min-height: 82px !important;
   }
 
-  .accordion-style .btn-link:after{
-    top: 24px !important
+  .accordion-style .btn-link:after {
+    top: 24px !important;
   }
 }
 
@@ -3179,8 +3178,8 @@ button:focus:not(:focus-visible) {
 .tp-header__menu ul li .sub-menu li a:hover {
   color: #fbd45b;
 }
-.active{
-  color: #fbd45b !important
+.active {
+  color: #fbd45b !important;
 }
 .tp-header__menu ul li .sub-menu li:not(:last-child) {
   margin-bottom: 10px;
@@ -5640,7 +5639,7 @@ button:focus:not(:focus-visible) {
 
 .tp-slider-3__overlay {
   position: relative;
-  background-color: #132a3b;;
+  background-color: #132a3b;
   background-blend-mode: luminosity;
 }
 .tp-slider-3__overlay::after {
@@ -9838,6 +9837,30 @@ button:focus:not(:focus-visible) {
   right: 30px;
 }
 
+.text-area_in_contact_page textarea {
+  padding: 35px 30px;
+  border: 0;
+  background-color: var(--tp-heading-primary);
+  color: #fff;
+  outline: none;
+  resize: none;
+  height: 115px;
+  border: 2px solid #364743;
+  line-height: 1.5;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
 .text_area textarea {
   width: 100%;
   padding: 0 30px;
@@ -11929,7 +11952,7 @@ button:focus:not(:focus-visible) {
   resize: none;
   height: 115px;
   border: 2px solid #364743;
-  line-height: 0;
+  line-height: 1.5;
 }
 .contact__input textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
